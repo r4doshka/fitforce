@@ -1,2 +1,22 @@
-.footer {
+$block: ".fitforce-footer";
+
+#{$block}{
+  &-top{
+    padding-bottom: 28px;
+    border-bottom: 2px solid rgba(214, 223, 234, 0.5);
+  }
+  &-bottom{
+    padding: 27px 0;
+  }
+  &-logo{
+
+  }
+  &-menu{
+
+  }
+  &-group{
+    @extend .flexbox;
+    @extend .justify-between;
+    @extend .align-center;
+  }
 }

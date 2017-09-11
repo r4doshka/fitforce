@@ -1,0 +1,35 @@
+$block: ".fitforce-wave-bg";
+
+#{$block}{
+  &-after{
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      left: -206px;
+      right: 0;
+      bottom: 0;
+      top: 330px;
+      background-image: url('../images/wave.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: -1;
+    }
+  }
+  &-before{
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: -300px;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-image: url('../images/wave2.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+}

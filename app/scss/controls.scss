@@ -1,12 +1,22 @@
-.btn{
+$block: ".fitforce-btn";
+
+#{$block}{
   &:hover,
   &:focus,
   &:active,
   &:active:focus{
     outline:none;
-    box-shadow: none;
   }
-  &.btn-primary {
-
+  &-primary{
+    padding: 14px 39px 17px;
+    background: $color2;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 6px 9px 0 rgba(99, 173, 229, 0.6);
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    color: $color;
   }
 }
+

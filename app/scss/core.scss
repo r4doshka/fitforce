@@ -6,6 +6,11 @@ body{
   transition: all 0.4s;
 }
 
+.container{
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
 .flexbox{
   display: flex;
 }
@@ -17,6 +22,9 @@ body{
 }
 .flexwrap{
   flex-wrap: wrap;
+}
+.justify-end{
+  justify-content: flex-end;
 }
 .nopadding{
   padding: 0;

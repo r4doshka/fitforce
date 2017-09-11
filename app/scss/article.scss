@@ -1,0 +1,19 @@
+$block: ".fitforce-article";
+
+#{$block}{
+  &-header{
+    margin-bottom: 16px;
+    padding-right: 170px;
+    .fitforce-title-secondary{
+      letter-spacing: 0.3px;
+    }
+  }
+  &-note{
+    margin-bottom: 59px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $color3;
+  }
+}

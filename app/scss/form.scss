@@ -1,0 +1,27 @@
+$block: ".fitforce-form";
+
+#{$block}{
+  input{
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: $color4; font-size: 20px; line-height: 22px;     letter-spacing: 0.2px;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: $color4; font-size: 20px; line-height: 22px;     letter-spacing: 0.2px;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: $color4; font-size: 20px; line-height: 22px;     letter-spacing: 0.2px;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: $color4; font-size: 20px; line-height: 22px;     letter-spacing: 0.2px;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus,
+    &:active{
+      outline: none;
+      border:none;
+    }
+  }
+  &-control{
+    height: 54px;
+    padding: 4px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.11);
+    border:none;
+  }
+}

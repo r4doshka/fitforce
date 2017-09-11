@@ -1,0 +1,54 @@
+$block: ".fitforce-list";
+
+#{$block}{
+  &-item{
+    margin-bottom: 75px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &-header{
+      margin-bottom: 12px;
+      @extend .flexbox;
+      @extend .align-center;
+    }
+    &-title{
+      padding-bottom: 4px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.5;
+      color: $color3;
+    }
+    &-description{
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: $color3;
+      p{
+        margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      &#{$block}{
+        &-item{
+          &-description{
+            &__secondary{
+              letter-spacing: -0.1px;
+              p{
+                margin-bottom: 27px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-icon{
+      margin-right: 18px;
+    }
+  }
+  &#{$block}{
+    &__article{
+      padding: 0 75px 0 50px;
+    }
+  }
+}

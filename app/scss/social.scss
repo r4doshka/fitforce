@@ -1,0 +1,18 @@
+$block: ".fitforce-social";
+
+#{$block}{
+  @extend .flexbox;
+  padding: 0;
+  margin: 0;
+  &-item{
+    margin-right: 16px;
+    list-style: none;
+    &:last-child{
+      margin-right: 0;
+    }
+    &-link{
+      @extend .flexbox;
+      @extend .align-center;
+    }
+  }
+}

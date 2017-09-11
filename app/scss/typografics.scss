@@ -1,11 +1,55 @@
-.title-primary{
+$block: ".fitforce-";
 
+#{$block}{
+  &title-primary{
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.18;
+    color: $color3;
+  }
+
+  &title-secondary{
+    margin: 0;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1.24;
+    color: $color3;
+    &__border{
+      position: relative;
+      padding-top: 34px;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 2px;
+        width: 120px;
+        background-color: $color2;
+      }
+    }
+    &.fitforce-title-secondary__reverse{
+      text-align: right;
+      &.fitforce-title-secondary__border{
+        &:before{
+          left:inherit;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &sub-title{
+
+  }
+
+  &note-primary{
+
+  }
+  &highlighted{
+    color: $color2;
+  }
 }
 
-.sub-title{
 
-}
-
-.note-primary{
-
-}

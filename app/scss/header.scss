@@ -1,3 +1,15 @@
-.header{
+$block: ".fitforce-header";
 
+#{$block}{
+  padding-top: 39px;
+  &-inner{
+    @extend .flexbox;
+    @extend .align-center;
+  }
+  &-logo{
+    padding-top: 4px;
+  }
+  &-menu{
+
+  }
 }

@@ -1,0 +1,51 @@
+$block: ".fitforce-card";
+
+#{$block}{
+  width: 453px;
+  margin-bottom: 144px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &__top-indent{
+    padding-top: 22px;
+  }
+  &-image{
+    margin-bottom: 40px;
+  }
+  &-title{
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    color: $color3;
+  }
+  &-description{
+    padding-right: 94px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+    color: $color3;
+  }
+  &-gropup{
+    @extend .flexbox;
+  }
+  &#{$block}{
+    &__differ{
+      width: 100%;
+      @extend .flexbox;
+      .fitforce-card-image{
+        margin: 0 56px 0 0;
+      }
+      .fitforce-card-group{
+        max-width: 360px;
+        align-self: flex-end;
+        padding-bottom: 120px;
+      }
+      .fitforce-card-description{
+        padding-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+$block: ".fitforce-features";
+
+#{$block}{
+  padding: 191px 0 0;
+  &-header{
+    margin-bottom: 86px;
+  }
+  &-row{
+    @extend .flexbox;
+    padding-left: 50px;
+  }
+  &-column{
+    flex:1;
+    margin-right: 86px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
