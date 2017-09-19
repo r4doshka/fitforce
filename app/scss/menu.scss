@@ -5,9 +5,22 @@ $block: ".fitforce-menu";
   padding: 0;
   @extend .flexbox;
   @extend .justify-end;
+  @media screen and (max-width: 992px) {
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
   &-item{
     list-style: none;
     margin-right: 38px;
+    @media screen and (max-width: 992px) {
+      margin-right:0;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
     &:last-child{
       margin-right: 0;
     }
@@ -15,6 +28,12 @@ $block: ".fitforce-menu";
       font-size: 18px;
       line-height: 1;
       color: $color1;
+      @media screen and (max-width: 992px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
       &:hover,
       &:active,
       &:focus,
@@ -23,40 +42,82 @@ $block: ".fitforce-menu";
         outline: none;
         text-decoration: none;
       }
+      &:before{
+        display: none;
+        content: '';
+        position: absolute;
+        bottom: -17px;
+        left: -10px;
+        right: -10px;
+        height: 2px;
+        background: $color2;
+        -webkit-animation-duration: 0.6s;
+        animation-duration: 0.6s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        @media screen and (max-width: 992px) {
+          bottom:-7px;
+          left: -5px;
+          right: -5px;
+        }
+        @media screen and (max-width: 768px) {
+          bottom: -10px;
+          left: 0;
+          right: 0;
+        }
+      }
       &:hover{
         position: relative;
-        color: $color2;
         &:before{
-          content: '';
-          position: absolute;
-          bottom: -17px;
-          left: -10px;
-          right: -10px;
           display: block;
-          height: 2px;
-          background: $color2;
-          -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-          -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-          -webkit-animation-name: zoomIn;
-          animation-name: zoomIn;
         }
       }
       &.active{
         position: relative;
         color: $color2;
+
         &:before{
-          content: '';
-          position: absolute;
-          bottom: -17px;
-          left: -5px;
-          right: -12px;
           display: block;
-          height: 2px;
-          background: $color2;
-          animation: none;
         }
+      }
+    }
+  }
+  &-toggle{
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      float: right;
+    }
+  }
+  &-panel-mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color2;
+    z-index: 999999;
+    svg{
+      path{
+        fill: $color;
+      }
+      g{
+        fill: $color;
+      }
+    }
+    .fitforce-menu{
+      margin-top: 100px;
+    }
+    .fitforce-menu-item-link{
+        font-size: 24px;
+        line-height: 2.33;
+        color: $color;
+      &:hover{
+        color:  $color;
       }
     }
   }

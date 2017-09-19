@@ -17,6 +17,9 @@ $block: ".fitforce-btn";
     line-height: 23px;
     font-weight: 500;
     color: $color;
+    @media screen and (max-width: 1200px) {
+      padding: 14px 25px 17px;
+    }
   }
 }
 

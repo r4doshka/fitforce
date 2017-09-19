@@ -1,12 +1,40 @@
 $block: ".fitforce-article";
 
 #{$block}{
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
   &-header{
     margin-bottom: 16px;
     padding-right: 170px;
+    &__border{
+      @extend .flexbox;
+      @extend .align-center;
+      position: relative;
+      padding-top: 34px;
+      @media screen and (max-width: 768px) {
+        padding-top: 12px;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 2px;
+        width: 120px;
+        background-color: $color2;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+    }
     .fitforce-title-secondary{
       letter-spacing: 0.3px;
     }
+  }
+  &-icon{
+    margin-right: 18px;
   }
   &-note{
     margin-bottom: 59px;
@@ -15,5 +43,12 @@ $block: ".fitforce-article";
     font-weight: 300;
     line-height: 1.5;
     color: $color3;
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+      font-size: 17px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }

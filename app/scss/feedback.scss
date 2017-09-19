@@ -3,11 +3,17 @@ $block: ".fitforce-feedback";
 #{$block}{
   position: relative;
   padding: 435px 0 141px 0;
+  @media screen and (max-width: 768px) {
+    padding: 75px 0 60px 0;
+  }
   &-header{
     margin-bottom: 23px;
   }
   &-inner{
     padding-left: 156px;
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+    }
   }
   &-description{
     padding-right: 20px;
@@ -16,6 +22,9 @@ $block: ".fitforce-feedback";
     line-height: 1.44;
     text-align: left;
     color: $color3;
-
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
   }
 }

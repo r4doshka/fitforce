@@ -10,5 +10,9 @@ $block: ".fitforce-search";
     font-weight: 300;
     line-height: 1.5;
     color: $color3;
+    @media screen and (max-width: 768px) {
+      width: 150px;
+      padding: 4px 32px 4px 18px;
+    }
   }
 }

@@ -4,19 +4,46 @@ $block: ".fitforce-footer";
   &-top{
     padding-bottom: 28px;
     border-bottom: 2px solid rgba(214, 223, 234, 0.5);
+    @media screen and (max-width: 768px) {
+      border:none;
+    }
   }
   &-bottom{
     padding: 27px 0;
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+      .fitforce-footer-group{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+    }
+
   }
   &-logo{
-
+    @media screen and (max-width: 768px) {
+      margin-bottom: 25px;
+    }
   }
   &-menu{
-
+    @media screen and (max-width: 768px) {
+      .fitforce-menu-item{
+        margin-bottom: 35px;
+        text-align: left;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
   }
   &-group{
     @extend .flexbox;
     @extend .justify-between;
     @extend .align-center;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  &-social{
+    margin-bottom: 30px;
   }
 }

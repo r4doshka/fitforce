@@ -3,17 +3,26 @@ $block: ".fitforce-intro";
 #{$block}{
   position: relative;
   padding: 126px 0 182px;
+  @media screen and (max-width: 768px) {
+    padding: 15px 0 50px;
+  }
   &-header{
     margin-bottom: 32px;
   }
   &-content{
     padding-right: 70px;
+    @media screen and (max-width: 1200px) {
+      padding-right: 0;
+    }
   }
   &-inner{
     padding-top: 39px;
   }
   &-image{
     padding-left: 55px;
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+    }
   }
   &-description{
     margin-bottom: 19px;
@@ -23,6 +32,13 @@ $block: ".fitforce-intro";
       line-height: 1.45;
       color: #617288;
       margin-bottom: 34px;
+      -webkit-font-smoothing: antialiased;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+
       &:last-child{
         margin-bottom: 0;
       }

@@ -1,6 +1,6 @@
 body{
   font-family: $font-primary;
-
+  -webkit-font-smoothing: antialiased;
 }
 *{
   transition: all 0.4s;
@@ -9,6 +9,10 @@ body{
 .container{
   padding-left: $container-padding;
   padding-right: $container-padding;
+  @media screen and (max-width: 768px) {
+    padding-left:15px;
+    padding-right: 15px;
+  }
 }
 
 .flexbox{
@@ -31,4 +35,8 @@ body{
 }
 .nomargin{
   margin: 0 ;
+}
+
+.no-scroll{
+  overflow: hidden !important;
 }

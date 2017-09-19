@@ -1,15 +1,43 @@
 $block: ".fitforce-header";
 
 #{$block}{
+  *{
+    transition: all 0s !important;
+  }
   padding-top: 39px;
+  @media screen and (max-width: 768px) {
+    padding-top: 7px;
+  }
   &-inner{
     @extend .flexbox;
     @extend .align-center;
+    @media screen and (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+  &-group{
+    @extend .flexbox;
+    @extend .align-center;
+    @extend .justify-between;
+    @media screen and (max-width: 768px) {
+      padding: 0 15px;
+    }
+
   }
   &-logo{
     padding-top: 4px;
+    @media screen and (max-width: 992px) {
+      svg{
+        max-width: 200px;
+      }
+    }
   }
   &-menu{
-
+    @media screen and (max-width: 768px) {
+      *{
+        transition: none !important;
+      }
+      display: none;
+    }
   }
 }

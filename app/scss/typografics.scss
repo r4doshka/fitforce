@@ -7,6 +7,10 @@ $block: ".fitforce-";
     font-weight: 700;
     line-height: 1.18;
     color: $color3;
+    @media screen and (max-width: 768px) {
+      font-size: 33px;
+      line-height: 1.29;
+    }
   }
 
   &title-secondary{
@@ -16,8 +20,13 @@ $block: ".fitforce-";
     line-height: 1.24;
     color: $color3;
     &__border{
+      @extend .flexbox;
+      @extend .align-center;
       position: relative;
       padding-top: 34px;
+      @media screen and (max-width: 768px) {
+        padding-top: 12px;
+      }
       &:before{
         content: '';
         position: absolute;
@@ -29,12 +38,21 @@ $block: ".fitforce-";
         background-color: $color2;
       }
     }
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      justify-content: flex-start !important;
+    }
     &.fitforce-title-secondary__reverse{
       text-align: right;
+      justify-content: flex-end;
       &.fitforce-title-secondary__border{
         &:before{
           left:inherit;
           right: 0;
+          @media screen and (max-width: 768px) {
+            left:0;
+            right: inherit;
+          }
         }
       }
     }
