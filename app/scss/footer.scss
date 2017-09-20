@@ -26,6 +26,7 @@ $block: ".fitforce-footer";
   }
   &-menu{
     @media screen and (max-width: 768px) {
+      flex: 0 0 100%;
       .fitforce-menu-item{
         margin-bottom: 35px;
         text-align: left;

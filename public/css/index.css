@@ -11912,6 +11912,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .fitforce-footer-menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
   .fitforce-footer-menu .fitforce-menu-item {
     margin-bottom: 35px;
     text-align: left;
