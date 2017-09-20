@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 const scriptName = () => {
 
-    $('.fitforce-menu-toggle').on('click', function(){
+    $('.fitforce-menu-toggle, .fitforce-menu-panel-mobile .fitforce-menu-item-link').on('click', function(){
         $('.fitforce-menu-panel-mobile').slideToggle();
         $('body').toggleClass('no-scroll')
     });
